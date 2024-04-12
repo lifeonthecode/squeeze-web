@@ -151,13 +151,14 @@ body {
 .wrapper {
     max-width: 1170px;
     padding: 0px 15px;
+    margin-bottom: 5px;
 }
 
 .wrapper h1 {
     font-size: 29px;
     font-weight: 700;
     text-transform: capitalize;
-    line-height: 35.7px;
+    line-height: 37.7px;
     color: rgb(44, 44, 44);
     /* margin-bottom: 18px; */
 }
@@ -177,6 +178,11 @@ body {
     margin: 0;
 }
 
+.bottom_title  {
+    max-width: 1170px;
+    padding: 10px 15px;
+    margin-inline: auto;
+}
 .bottom_title h1 {
     font-size: 29px;
     font-weight: 700;
