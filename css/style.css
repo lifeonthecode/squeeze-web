@@ -13,42 +13,32 @@ body {
 }
 
 
-/* header style  */
-
-.header {
+/* .header {
     position: absolute;
-    top: 0;
+    top: 50px;
     left: 0;
     right: 0;
     z-index: 999;
-    padding: 50px;
-}
+} */
 
-.logo {
-    max-width: 150px;
-    max-height: 110px;
-    margin: 0 auto;
-}
 
-.logo img {
-    width: 100%;
-    height: 100%;
-}
 
-/*********************banner style*******************/
+/*********************hero style*******************/
 
-.banner {
+.hero {
     background-image: url('../assets/banner-section.jpg');
     width: 100%;
-    height: 130vh;
+    height: 1160px;
     background-size: cover;
     background-position: center;
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     position: relative;
+    padding: 20px 0px;
 }
-.banner::after {
+.hero::after {
     position: absolute;
     top: 0;
     left: 0;
@@ -59,14 +49,34 @@ body {
     opacity: .5;
 }
 
-.banner .banner_inner {
-    position: relative;
-    z-index: 999;
-    max-width: 1130px;
-    text-align: center;
+
+
+.logo {
+	max-width: 150px;
+	max-height: 110px;
+	margin: 0 auto;
+	position: absolute;
+    top: 80px;
+    left: 0;
+    right: 0;
+    z-index: 99;
+    padding: 10px;
 }
 
-.banner .banner_inner h2 {
+.logo img {
+    width: 100%;
+    height: 100%;
+}
+
+.hero .hero_inner {
+    position: relative;
+    max-width: 1114px;
+    margin-inline: auto;
+    text-align: center;
+    z-index: 999;
+}
+
+.hero .hero_inner h2 {
     font-size: 90px;
     font-weight: 700;
     color: white;
@@ -74,32 +84,34 @@ body {
     margin-bottom: 40px;
 }
 
-.banner .banner_inner h2 span {
+.hero .hero_inner h2 span {
     color: #eed289;
 }
 
 
-.banner .banner_inner p  {
-    font-size: 22px;
-    color: white;
-    font-weight: normal;
-    text-shadow: 0 0 0 transparent;
-    line-height: 1.3em;
-    margin-bottom: 40px;
+.hero .hero_inner p {
+	font-size: 22px;
+	color: white;
+	font-weight: normal;
+	text-shadow: 0 0 0 transparent;
+	line-height: 1.3em;
+	padding-top: 20px;
+	margin: 0;
 }
 
 
-.banner .banner_inner h4  {
-    font-family: "Cedarville Cursive", cursive;
-    font-size: 57px;
-    color: white;
-    font-weight: 500;
-    line-height: 1.3em;
-    margin-bottom: 35px;
-    text-shadow: 0 0 0 transparent
+.hero .hero_inner h4 {
+	font-family: "Cedarville Cursive", cursive;
+	font-size: 57px;
+	color: white;
+	font-weight: 500;
+	line-height: 1.3em;
+	padding: 40px 0px 20px;
+	text-shadow: 0 0 0 transparent;
+	margin: 0;
 }
 
-.banner .banner_inner h4 span  {
+.hero .hero_inner h4 span  {
     color: #eed289;
 
 }
@@ -108,13 +120,13 @@ body {
 
 /**************************answer style****************/
 .answer {
-    padding: 50px 0px;
+    padding: 0px 0px 50px;
 }
 
 
 .header_title {
-    text-align: center;
-    margin-bottom: 30px;
+	text-align: center;
+	padding: 15px 0;
 }
 
 .header_title h1 {
@@ -129,31 +141,40 @@ body {
     color: #eed289;
 }
 
+.answer_content_container {
+    padding: 10px 5px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
 .wrapper {
-    margin-bottom: 25px;
+    max-width: 1170px;
+    padding: 0px 15px;
 }
 
 .wrapper h1 {
     font-size: 29px;
     font-weight: 700;
     text-transform: capitalize;
-    line-height: 37.7px;
+    line-height: 35.7px;
     color: rgb(44, 44, 44);
-    margin-bottom: 18px;
+    /* margin-bottom: 18px; */
 }
 
 .wrapper h1 span {
-    color: #eed289;
+    color: #A97140;
 }
 
 .wrapper p {
     font-size: 18px;
     color: rgb(44, 44, 44);
     font-weight: 400;
-    line-height: 1.6em;
+    line-height: 28.8px;
     text-transform: none;
     letter-spacing: 0;
     text-align: left;
+    margin: 0;
 }
 
 .bottom_title h1 {
@@ -162,19 +183,21 @@ body {
     color: #a97140;
     line-height: 65px;
     text-transform: capitalize;
+    padding-top: 40px;
+    margin-bottom: 10px;
 }
 
 
 
 /**************************newsLetter style ********************/
 .newsletter {
-    background-image: url('../assets/newsletter.bmp');
-    background-position: center;
+    background-image: url("../assets/newsletter.bmp");
+    background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;
     padding: 50px 0px;
     width: 100%;
-    min-height: 350px;
+    height: 394px;
     display: flex;
     align-items: center;
 }
@@ -190,7 +213,7 @@ body {
     line-height: 1.3em;
     text-transform: capitalize;
     letter-spacing: 0;
-    margin-bottom: 5px;
+    margin: 0;
 }
 .text_content h1 span {
     color: #eed289;
@@ -198,43 +221,63 @@ body {
 }
 
 .text_content button {
-    width: 80%;
-  padding: 15px 20px;
-  font-weight: 700;
-  background-color: rgb(238, 210, 137);
-  border-radius: 50px;
-  color: white;
-  text-shadow: 1px 1px 1px rgba(0,0,0,.2);
-  border-color: #00000033;
-  transition: all 0.3s ease;
-  cursor: pointer;
+    max-width: 545px;
+    width: 100%;
+    height: 58px;
+    padding: 15px 20px;
+    font-weight: 700;
+    background-color: rgb(238, 210, 137);
+    border-radius: 50px;
+    border: 2px solid;
+    color: white;
+    text-shadow: 1px 1px 1px rgba(0,0,0,.2);
+    border-color: #00000033;
+    cursor: pointer;
+    animation-name: example;
+    animation-delay: 4s;
+    animation-duration: 3s ;
+    animation-iteration-count: infinite;
 }
 
-.text_content button:hover {
-	box-shadow: 0px 0px 13px #e1dfdf90;
-}
-
-.row {
-    align-items: center;
-}
+@keyframes example {
+    0%   {
+        box-shadow: 0px 0px 0px white;
+    }
+    25% {
+        box-shadow: 0px 0px 5px white;
+    }
+    50% {
+        box-shadow: 0px 0px 0px white;
+    }
+    75% {
+        box-shadow: 0px 0px 5px white;
+    }
+    100% {
+        box-shadow: 0px 0px 0px white;
+    }
+  }
 
 
 .form {
     display: flex;
     column-gap: 25px;
+    padding: 40px 20px;
+    margin-top: -25px;
 }
 
 .form input {
-    width: 75%;
-    height: 50px;
-    padding: 0px 10px;
+    max-width: 200px;
+    width: 100%;
+    height: 51px;
+    padding: 15px 20px;
     outline: none;
     border-radius: 5px;
     border: transparent;
 }
 .form button {
-    width: 20%;
-    height: 50px;
+    max-width: 104px;
+    width: 100%;
+    height: 51px;
     border-radius: 5px;
     border: transparent;
     color: #FFFFFF;
@@ -243,6 +286,7 @@ body {
     text-transform: capitalize;
     background: linear-gradient(0deg, rgba(238,210,137,1) 26%, rgba(169,113,64,1) 88%);
     transition: all .3s ease;
+    margin-top: 15px;
 }
 
 
@@ -253,7 +297,7 @@ body {
 
 /********************footer style*****************/
 .footer {
-    background-color: #2c2c2c;
+    background-color: #2C2C2C;
     padding: 50px 20px;
 }
 
@@ -272,6 +316,22 @@ body {
 	text-transform: none;
 	letter-spacing: 0;
 	text-align: center;
-	color: rgb(185, 185, 185);
+	color: #969696;
     margin-top: 5px;
 }
+
+
+.footer_logo {
+    max-width: 150px;
+	max-height: 110px;
+	margin: 0 auto;
+}
+
+.footer_logo img {
+    width: 100%;
+    height: 100%;
+}
+
+
+
+
