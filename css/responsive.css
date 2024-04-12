@@ -78,6 +78,22 @@
 /* sm device  */
 @media (max-width: 768px) {
 
+    .hero {
+        min-height: 995px;
+        width: 100%;
+    }
+
+    .logo {
+        top: 20px;
+    }
+
+
+    .hero .hero_inner h2 {
+        font-size: 80px;
+        line-height: 90px;
+    }
+
+
     .answer-section {
         padding: 0px 20px;
     }
@@ -121,6 +137,12 @@
 
 /* xm device */
 @media (max-width: 576px) {
+
+    .hero {
+        min-height: 995px;
+        width: 100%;
+    }
+
     .answer-section {
         padding: 0px 20px;
     }
