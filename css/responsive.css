@@ -1,0 +1,185 @@
+
+/* xxl device  */
+@media (min-width: 1440px) {
+    
+}
+
+
+/* xl large device  */
+@media (min-width: 1200px) {
+    .container {
+        width: 100%;
+        padding: 0px;
+    }
+}
+
+
+/* lg  device  */
+@media (min-width: 992px) {
+    .container {
+        width: 100%;
+        padding: 0px;
+    }
+
+    .answer_content_container {
+        padding: 10px 0px;
+    }
+
+    .wrapper {
+        width: 100%;
+        padding: 0px 0px;
+    }
+
+    .bottom_title {
+        width: 100%;
+        padding: 10px 0px;
+    }
+
+    .bottom_title h1 {
+        line-height: 37px;
+    }
+}
+
+
+/* md device  */
+
+@media (min-width: 768px) {
+    .container {
+        width: 100%;
+        padding: 0px;
+    }
+
+    .answer_content_container {
+        padding: 10px 0px;
+    }
+
+    .wrapper {
+        width: 100%;
+        padding: 0px 0px;
+    }
+
+    .bottom_title {
+        width: 100%;
+        padding: 10px 0px;
+    }
+
+    .bottom_title h1 {
+        line-height: 37px;
+    }
+
+    .footer_content {
+        padding: 0px;
+    }
+
+    
+}
+
+
+/* sm device  */
+@media (max-width: 768px) {
+
+    .answer-section {
+        padding: 0px 20px;
+    }
+
+    .answer_content_container {
+        padding: 10px 0px;
+        
+    }
+
+    .wrapper {
+        width: auto;
+        padding: 0px 0px;
+    }
+
+    .bottom_title {
+        width: 100%;
+        padding: 10px 0px;
+    }
+
+    .bottom_title h1 {
+        line-height: 37px;
+    }
+
+    .footer_content {
+        padding: 0px;
+    }
+
+    .form {
+        display: flex;
+        flex-direction: column;
+    }
+
+
+    .form input {
+        max-width: 500px;
+        width: 100%;
+    }
+
+}
+
+
+/* xm device */
+@media (max-width: 576px) {
+    .answer-section {
+        padding: 0px 20px;
+    }
+
+    .hero .hero_inner h2 {
+        font-size: 29px;
+        line-height: 42px;
+    }
+
+    .answer_content_container {
+        padding: 10px 0px;
+        
+    }
+
+    .wrapper {
+        width: auto;
+        padding: 0px 0px;
+    }
+
+    .bottom_title {
+        width: 100%;
+        padding: 10px 0px;
+    }
+
+    .header_title h1 {
+        font-size: 32px;
+        line-height: 40px;
+    }
+
+    .wrapper h1 {
+        font-size: 20px;
+        line-height: 27.7px;
+    }
+
+    .bottom_title h1 {
+        font-size: 20px;
+        line-height: 29px;
+    }
+
+
+
+    .footer_content {
+        width: 100%;
+        padding: 0 0px;
+    }
+
+    .form {
+        display: flex;
+        flex-direction: column;
+    }
+
+
+    .form input {
+        max-width: 100%;
+    }
+
+
+    .hero .hero_inner h4 {
+        font-size: 41px;
+        line-height: 2rem;
+    }
+}
